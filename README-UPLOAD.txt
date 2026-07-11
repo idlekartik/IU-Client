@@ -1,21 +1,22 @@
-IU CLIENT WEBSITE — GITHUB PAGES UPLOAD
+IU CLIENT PROFESSIONAL WEBSITE — OFFICIAL MUSIC EDITION
 
-1. Open your GitHub repository: idlekartik/IU-Client
-2. Click Add file > Upload files.
-3. Upload EVERY file and the assets folder from this website package.
-4. Click Commit changes.
-5. Open Settings > Pages.
-6. Source: Deploy from a branch.
-7. Branch: main, folder: / (root).
-8. Click Save.
+UPLOAD TO YOUR GITHUB REPOSITORY ROOT:
+- index.html
+- style.css
+- script.js
+- favicon.png
+- .nojekyll
+- complete assets folder
 
-Your website will be available at:
-https://idlekartik.github.io/IU-Client/
+The assets folder must include:
+- logo.png
+- home-preview.png
+- server-preview.png
+- skin-preview.png
+- iu-client-official-song.mp3
 
-The Download buttons currently open:
-https://github.com/idlekartik/IU-Client/releases/latest
+GitHub Pages:
+Settings -> Pages -> Deploy from a branch -> main -> /(root) -> Save
 
-Important:
-- Keep index.html in the repository root.
-- Upload the complete assets folder.
-- Do not rename the image files unless you also update index.html.
+IMPORTANT:
+Modern browsers may block sound autoplay until the visitor clicks once. The website automatically shows a professional "Play Official Song" prompt only when autoplay is blocked.
