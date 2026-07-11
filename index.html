@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b16">
+  <meta name="description" content="IU Client 1.0.0 — a polished Minecraft 1.21.11 Fabric client with FPS tools, customizable HUDs, music, server tools and smooth visuals.">
+  <meta property="og:title" content="IU Client 1.0.0">
+  <meta property="og:description" content="A polished Minecraft 1.21.11 Fabric client, developed by kartikextras.">
+  <meta property="og:image" content="assets/home-preview.png">
+  <meta property="og:type" content="website">
+  <title>IU Client — Professional Minecraft Client</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="page-loader" id="pageLoader" aria-hidden="true">
+    <div class="loader-orbit"></div>
+    <img src="assets/logo.png" alt="">
+    <strong>IU CLIENT</strong>
+    <span>Loading the experience</span>
+    <div class="loader-line"><i></i></div>
+  </div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="IU Client home">
+      <img src="assets/logo.png" alt="IU Client logo">
+      <span>IU Client</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Open navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="mainNav" class="main-nav" aria-label="Primary navigation">
+      <a href="#features">Features</a>
+      <a href="#showcase">Preview</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+
+    <a class="header-download" href="https://github.com/idlekartik/IU-Client/releases/latest" target="_blank" rel="noreferrer">Download 1.0.0</a>
+  </header>
+
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> Minecraft Java 1.21.11 • Fabric</div>
+        <h1>Play cleaner.<br><span>Fight smoother.</span></h1>
+        <p>IU Client combines performance tools, a fully movable HUD, music, server utilities and a polished visual experience in one lightweight client.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://github.com/idlekartik/IU-Client/releases/latest" target="_blank" rel="noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 17v2h14v-2"/></svg>
+            Download IU Client
+          </a>
+          <a class="button button-ghost" href="https://github.com/idlekartik/IU-Client" target="_blank" rel="noreferrer">
+            View on GitHub
+          </a>
+        </div>
+        <div class="trust-row">
+          <span><b>1.0.0</b> Final release</span>
+          <span><b>Free</b> to download</span>
+          <span><b>24/7</b> GitHub hosting</span>
+          <span><b>Official</b> soundtrack included</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="120">
+        <div class="visual-glow"></div>
+        <div class="client-window tilt-card">
+          <div class="window-topbar">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span>IU CLIENT • 1.0.0</span>
+            <div class="window-status">ONLINE</div>
+          </div>
+          <div class="window-content">
+            <img src="assets/logo.png" alt="IU Client">
+            <p>Professional Minecraft Client</p>
+            <div class="window-buttons">
+              <span>Singleplayer</span>
+              <span class="active">Multiplayer</span>
+              <span>Mods</span>
+            </div>
+          </div>
+          <div class="window-footer">
+            <span>FPS BOOST</span><span>PVP TOOLS</span><span>MUSIC</span>
+          </div>
+        </div>
+        <div class="floating-card card-fps"><strong>240</strong><span>FPS</span></div>
+        <div class="floating-card card-ping"><strong>28</strong><span>MS PING</span></div>
+        <div class="floating-card card-music"><span class="music-bars"><i></i><i></i><i></i><i></i><i></i></span><b>IU Music</b></div>
+      </div>
+    </section>
+
+    <section class="stats-strip reveal" aria-label="Client highlights">
+      <div><strong>10+</strong><span>Core modules</span></div>
+      <div><strong>100%</strong><span>Movable HUD</span></div>
+      <div><strong>1.21.11</strong><span>Minecraft version</span></div>
+      <div><strong>Fabric</strong><span>Optimized loader</span></div>
+    </section>
+
+    <section class="section-shell section-block" id="features">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Built for everyday play</div>
+        <h2>Everything useful.<br><span>Nothing messy.</span></h2>
+        <p>Every IU Client module is designed to stay clean, responsive and easy to control.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon pink"><svg viewBox="0 0 24 24"><path d="M4 14h4l2-8 4 14 2-6h4"/></svg></div>
+          <h3>FPS Booster</h3>
+          <p>Performance presets, reduced visual overhead and compatible optimization mods for smoother gameplay.</p>
+          <span class="feature-tag">Performance</span>
+        </article>
+        <article class="feature-card reveal" data-delay="70">
+          <div class="feature-icon cyan"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM8 9h8M8 13h5"/></svg></div>
+          <h3>Full HUD Studio</h3>
+          <p>Move, resize and save FPS, ping, armor, potions, music, coordinates and server widgets independently.</p>
+          <span class="feature-tag">Customization</span>
+        </article>
+        <article class="feature-card reveal" data-delay="140">
+          <div class="feature-icon green"><svg viewBox="0 0 24 24"><path d="M9 18V5l10-2v13M9 9l10-2M6 18a3 2 0 1 0 0 4 3 2 0 0 0 0-4zm10-2a3 2 0 1 0 0 4 3 2 0 0 0 0-4z"/></svg></div>
+          <h3>IU Music Player</h3>
+          <p>Play local songs, rearrange the playlist, control playback and display a reactive waveform inside Minecraft.</p>
+          <span class="feature-tag">Music</span>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-icon purple"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-11a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 6.5-7 11-7 11z"/></svg></div>
+          <h3>Favorite Servers</h3>
+          <p>Mark servers with a polished animated heart, keep favorites visible and reconnect quickly.</p>
+          <span class="feature-tag">Servers</span>
+        </article>
+        <article class="feature-card reveal" data-delay="70">
+          <div class="feature-icon orange"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7zM9 12l2 2 4-5"/></svg></div>
+          <h3>PvP Tools</h3>
+          <p>Cooldown feedback, target range, armor durability, potion timers and post-fight local analysis.</p>
+          <span class="feature-tag">Combat</span>
+        </article>
+        <article class="feature-card reveal" data-delay="140">
+          <div class="feature-icon blue"><svg viewBox="0 0 24 24"><path d="M12 2v4m0 12v4M4.9 4.9l2.8 2.8m8.6 8.6 2.8 2.8M2 12h4m12 0h4M4.9 19.1l2.8-2.8m8.6-8.6 2.8-2.8"/></svg></div>
+          <h3>IU Pulse Visuals</h3>
+          <p>Smooth aurora, particles, music-reactive accents and adjustable animation intensity with FPS impact controls.</p>
+          <span class="feature-tag">Visuals</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase-section" id="showcase">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <div class="eyebrow">See IU Client in action</div>
+          <h2>A client that looks<br><span>like your own.</span></h2>
+        </div>
+
+        <div class="showcase-grid">
+          <button class="shot shot-large reveal" type="button" data-image="assets/home-preview.png" data-title="IU Client Home Screen">
+            <img src="assets/home-preview.png" alt="IU Client home screen preview">
+            <span><b>Home Experience</b><small>Animated background, branding and fast access</small></span>
+          </button>
+          <button class="shot reveal" data-delay="80" type="button" data-image="assets/server-preview.png" data-title="Smart Server List">
+            <img src="assets/server-preview.png" alt="IU Client multiplayer server list preview">
+            <span><b>Server Tools</b><small>Locations, ping and favorite server controls</small></span>
+          </button>
+          <button class="shot reveal" data-delay="140" type="button" data-image="assets/skin-preview.png" data-title="Skin Changer">
+            <img src="assets/skin-preview.png" alt="IU Client skin changer preview">
+            <span><b>Skin Changer</b><small>Search, preview and apply local skins</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-block install-section" id="install">
+      <div class="install-card reveal">
+        <div class="install-copy">
+          <div class="eyebrow">Install in minutes</div>
+          <h2>Download. Install.<br><span>Launch IU Client.</span></h2>
+          <p>The public package places IU Client, configs and required assets into the correct Minecraft folders automatically.</p>
+          <a class="button button-primary" href="https://github.com/idlekartik/IU-Client/releases/latest" target="_blank" rel="noreferrer">Get the latest release</a>
+        </div>
+        <ol class="install-steps">
+          <li><span>01</span><div><b>Download the release</b><p>Open GitHub Releases and download the IU Client public ZIP.</p></div></li>
+          <li><span>02</span><div><b>Extract completely</b><p>Right-click the ZIP and extract it before running the installer.</p></div></li>
+          <li><span>03</span><div><b>Run the installer</b><p>Open <code>Install IU Client.bat</code> and let it place all files correctly.</p></div></li>
+          <li><span>04</span><div><b>Launch Fabric 1.21.11</b><p>Open Minecraft Launcher, select Fabric 1.21.11 and press Play.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-shell section-block" id="faq">
+      <div class="section-heading reveal">
+        <div class="eyebrow">Quick answers</div>
+        <h2>Frequently asked<br><span>questions.</span></h2>
+      </div>
+      <div class="faq-list">
+        <details class="reveal">
+          <summary>Which Minecraft version does IU Client support?</summary>
+          <p>The current public release is built for Minecraft Java 1.21.11 with Fabric Loader.</p>
+        </details>
+        <details class="reveal" data-delay="60">
+          <summary>Is IU Client free?</summary>
+          <p>Yes. Download the current release from the official GitHub repository.</p>
+        </details>
+        <details class="reveal" data-delay="120">
+          <summary>Where do I place my songs?</summary>
+          <p>Use the Music Player's Open Folder button, or place supported local audio files inside <code>.minecraft/config/iuclient/music/</code>.</p>
+        </details>
+        <details class="reveal" data-delay="180">
+          <summary>Can I move and resize HUD elements?</summary>
+          <p>Yes. Open the Full HUD Editor to move and scale each supported widget independently.</p>
+        </details>
+      </div>
+    </section>
+
+
+    <section class="feedback-section" id="feedback">
+      <div class="section-shell">
+        <div class="section-heading centered reveal">
+          <div class="eyebrow">Help shape the next update</div>
+          <h2>Found a problem?<br><span>Tell us right here.</span></h2>
+          <p>Your feedback is saved through GitHub Issues and stays visible on this page, so fixes and suggestions never get lost.</p>
+        </div>
+
+        <div class="feedback-actions reveal" data-delay="70">
+          <a class="feedback-action" href="https://github.com/idlekartik/IU-Client/issues/new?title=%5BBug%5D%20Describe%20the%20problem&amp;body=%23%23%20What%20happened%3F%0A%0A%23%23%20Steps%20to%20reproduce%0A1.%20%0A2.%20%0A3.%20%0A%0A%23%23%20Screenshot%20or%20video%0A" target="_blank" rel="noreferrer">
+            <span class="feedback-icon bug" aria-hidden="true">!</span>
+            <div><b>Report a bug</b><small>Share the issue, steps and screenshot.</small></div>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="feedback-action" href="https://github.com/idlekartik/IU-Client/issues/new?title=%5BFeature%5D%20My%20idea&amp;body=%23%23%20Feature%20idea%0A%0A%23%23%20Why%20it%20would%20help%0A" target="_blank" rel="noreferrer">
+            <span class="feedback-icon idea" aria-hidden="true">✦</span>
+            <div><b>Suggest a feature</b><small>Request something useful for IU Client.</small></div>
+            <i aria-hidden="true">↗</i>
+          </a>
+          <a class="feedback-action" href="https://github.com/idlekartik/IU-Client/issues/new?title=%5BUI%5D%20Design%20improvement&amp;body=%23%23%20Which%20screen%20or%20UI%3F%0A%0A%23%23%20What%20should%20change%3F%0A" target="_blank" rel="noreferrer">
+            <span class="feedback-icon ui" aria-hidden="true">◈</span>
+            <div><b>Improve the UI</b><small>Tell us what should look or feel better.</small></div>
+            <i aria-hidden="true">↗</i>
+          </a>
+        </div>
+
+        <div class="comments-shell reveal" data-delay="120">
+          <div class="comments-top">
+            <div>
+              <span class="comments-kicker">COMMUNITY FEEDBACK</span>
+              <h3>Comments and suggestions</h3>
+              <p>Sign in with GitHub, post your comment, and it will remain saved here for everyone to see.</p>
+            </div>
+            <a href="https://github.com/idlekartik/IU-Client/issues" target="_blank" rel="noreferrer">View all issues ↗</a>
+          </div>
+          <div class="comments-status"><span></span> Comments are stored publicly in the official IU Client repository.</div>
+          <div class="utterances-wrap">
+            <script src="https://utteranc.es/client.js"
+                    repo="idlekartik/IU-Client"
+                    issue-term="pathname"
+                    theme="github-dark"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell final-cta reveal">
+      <img src="assets/logo.png" alt="IU Client logo">
+      <div>
+        <p>Ready to upgrade your Minecraft setup?</p>
+        <h2>Start playing with IU Client.</h2>
+      </div>
+      <a class="button button-primary" href="https://github.com/idlekartik/IU-Client/releases/latest" target="_blank" rel="noreferrer">Download 1.0.0</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="IU Client logo">
+      <div><b>IU Client</b><span>Developed by kartikextras</span></div>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/idlekartik/IU-Client" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://github.com/idlekartik/IU-Client/releases/latest" target="_blank" rel="noreferrer">Releases</a>
+      <a href="#install">Install Guide</a>
+      <a href="#feedback">Feedback</a>
+    </div>
+    <p class="disclaimer">IU Client is an independent project and is not affiliated with Mojang Studios or Microsoft.</p>
+  </footer>
+
+
+  <audio id="siteMusic" src="assets/iu-client-official-song.mp3" preload="auto" autoplay loop></audio>
+
+  <aside class="music-dock" id="musicDock" aria-label="IU Client website music player">
+    <button class="dock-collapse" id="dockCollapse" type="button" aria-label="Minimize music player" title="Minimize">⌄</button>
+    <div class="music-cover" aria-hidden="true">
+      <span class="cover-ring"></span>
+      <img src="assets/logo.png" alt="">
+    </div>
+    <div class="music-main">
+      <div class="music-label"><span class="music-live-dot"></span> OFFICIAL SOUNDTRACK</div>
+      <div class="music-title-row">
+        <div>
+          <strong>IU Client Official Song</strong>
+          <small>IU Client • kartikextras</small>
+        </div>
+        <span class="volume-readout" id="volumeReadout">35%</span>
+      </div>
+      <canvas id="musicVisualizer" width="420" height="46" aria-hidden="true"></canvas>
+      <div class="music-timeline">
+        <input id="musicSeek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Song progress">
+        <div><span id="musicCurrent">0:00</span><span id="musicDuration">3:56</span></div>
+      </div>
+    </div>
+    <div class="music-controls">
+      <button id="volumeDown" type="button" aria-label="Volume down" title="Volume down">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10v4h4l5 4V6L9 10H5zm12 2h4"/></svg>
+      </button>
+      <button class="play-toggle" id="musicToggle" type="button" aria-label="Pause music" title="Play / pause">
+        <svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6v12M16 6v12"/></svg>
+        <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 9 6-9 6z"/></svg>
+      </button>
+      <button id="volumeUp" type="button" aria-label="Volume up" title="Volume up">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10v4h4l5 4V6L9 10H5zm14-1v6m-3-3h6"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <div class="sound-gate" id="soundGate" hidden>
+    <div class="sound-gate-glow"></div>
+    <img src="assets/logo.png" alt="IU Client">
+    <div>
+      <strong>Enter with IU Music</strong>
+      <span>Your browser paused autoplay. Click once to start the official song.</span>
+    </div>
+    <button id="enableSound" type="button">Play Official Song</button>
+  </div>
+
+  <dialog class="image-modal" id="imageModal">
+    <button class="modal-close" type="button" aria-label="Close preview">×</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

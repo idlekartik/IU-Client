@@ -1,22 +1,20 @@
-IU CLIENT PROFESSIONAL WEBSITE — OFFICIAL MUSIC EDITION
+IU Client Website — Feedback Edition
 
-UPLOAD TO YOUR GITHUB REPOSITORY ROOT:
+UPLOAD / REPLACE THESE FILES IN YOUR GITHUB REPOSITORY ROOT:
 - index.html
 - style.css
 - script.js
 - favicon.png
 - .nojekyll
-- complete assets folder
+- assets/ folder
 
-The assets folder must include:
-- logo.png
-- home-preview.png
-- server-preview.png
-- skin-preview.png
-- iu-client-official-song.mp3
+ONE-TIME COMMENT SYSTEM SETUP:
+1. Open https://github.com/apps/utterances
+2. Click Install.
+3. Select "Only select repositories".
+4. Select idlekartik/IU-Client and finish installation.
+5. Make sure GitHub repository Settings > General > Features > Issues is enabled.
 
-GitHub Pages:
-Settings -> Pages -> Deploy from a branch -> main -> /(root) -> Save
+Comments will then be stored as GitHub Issues and shown inside the website. Visitors need a GitHub account to post.
 
-IMPORTANT:
-Modern browsers may block sound autoplay until the visitor clicks once. The website automatically shows a professional "Play Official Song" prompt only when autoplay is blocked.
+After uploading, wait 1-2 minutes and hard refresh the website with Ctrl+F5.
